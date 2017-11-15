@@ -28,7 +28,7 @@ data class ComicRemote(
 		val title: String?, //Ultimate Spider-Man (Spanish Language Edition) (2000) #7
 		val issueNumber: Int?, //7
 		val variantDescription: String?,
-		val description: Any?, //null
+		val description: String?, //null
 		val modified: String?, //-0001-11-30T00:00:00-0500
 		val isbn: String?,
 		val upc: String?,
@@ -110,5 +110,5 @@ data class Creators(
 
 data class Price(
 		val type: String?, //printPrice
-		val price: Int? //0
+		val price: Float? //0
 )

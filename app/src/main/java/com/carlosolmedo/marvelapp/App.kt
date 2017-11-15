@@ -1,7 +1,6 @@
 package com.carlosolmedo.marvelapp
 
 import android.app.Application
-import android.arch.persistence.room.Room
 import com.carlosolmedo.marvelapp.model.remote.ComicApi
 import com.carlosolmedo.marvelapp.model.remote.RequestManager
 import com.carlosolmedo.marvelapp.viewmodel.ComicListViewModel
@@ -10,7 +9,6 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import timber.log.Timber
-
 
 class App : Application() {
 
@@ -56,4 +54,5 @@ class App : Application() {
 
         comicListViewModel = ComicListViewModel(comicRepository)
     }
+
 }

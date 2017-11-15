@@ -3,7 +3,7 @@ package com.carlosolmedo.marvelapp
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 
-import com.carlosolmedo.marvelapp.view.ComicsListFragment
+import com.carlosolmedo.marvelapp.view.comics.ComicsListFragment
 
 class MainActivity : AppCompatActivity() {
 

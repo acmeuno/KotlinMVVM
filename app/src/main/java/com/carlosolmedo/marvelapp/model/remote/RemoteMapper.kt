@@ -10,7 +10,15 @@ internal object RemoteMapper {
 
     fun toComicModel(comic: ComicRemote) : Comic {
 
-        return Comic(comic.id ?: 0)
+        return Comic(comic.id ?: 0,
+                comic.title,
+                comic.issueNumber,
+                comic.variantDescription,
+                comic.description,
+                comic.format,
+                comic.pageCount,
+                comic.resourceURI,
+                "${comic.thumbnail?.path}.${comic.thumbnail?.extension}")
     }
 
 }

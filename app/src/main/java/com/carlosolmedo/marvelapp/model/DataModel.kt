@@ -9,5 +9,6 @@ data class Comic(
         val description: String? = null, //null
         val format: String? = null, //ComicRemote
         val pageCount: Int? = null, //36
-        val resourceURI: String? = null
+        val resourceURI: String? = null,
+        val thumbnail: String?
 )

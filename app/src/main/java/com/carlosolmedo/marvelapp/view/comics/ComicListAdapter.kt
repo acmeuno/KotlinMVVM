@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.list_item_comic.view.*
  */
 class ComicListAdapter : RecyclerView.Adapter<ComicListAdapter.ComicViewHolder>() {
 
-    var items : List<Comic> = emptyList()
+    private var items : List<Comic> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ComicViewHolder {
         return ComicViewHolder(LayoutInflater.from(parent?.context).inflate(R.layout.list_item_comic, parent, false))
@@ -38,7 +38,7 @@ class ComicListAdapter : RecyclerView.Adapter<ComicListAdapter.ComicViewHolder>(
         fun bindComic(comic: Comic) {
             GlideApp.with(itemView)
                     .load(comic.thumbnail)
-                    .fitCenter()
+                    .centerCrop()
                     .into(itemView.imageView)
             itemView.textView.text = comic.title
         }

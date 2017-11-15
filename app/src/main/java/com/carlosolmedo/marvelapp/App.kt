@@ -3,6 +3,7 @@ package com.carlosolmedo.marvelapp
 import android.app.Application
 import com.carlosolmedo.marvelapp.model.remote.ComicApi
 import com.carlosolmedo.marvelapp.model.remote.RequestManager
+import com.carlosolmedo.marvelapp.model.remote.RequestManagerImpl
 import com.carlosolmedo.marvelapp.viewmodel.ComicListViewModel
 import org.olu.mvvm.viewmodel.ComicRepository
 import retrofit2.Retrofit
@@ -48,7 +49,7 @@ class App : Application() {
                 .build()
 */
 
-        requestManager = RequestManager(comicApi)
+        requestManager = RequestManagerImpl(comicApi)
 
         comicRepository = ComicRepository(requestManager)
 

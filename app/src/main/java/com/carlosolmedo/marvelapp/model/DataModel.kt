@@ -10,5 +10,5 @@ data class Comic(
         val format: String? = null, //ComicRemote
         val pageCount: Int? = null, //36
         val resourceURI: String? = null,
-        val thumbnail: String?
+        val thumbnail: String? = null
 )
